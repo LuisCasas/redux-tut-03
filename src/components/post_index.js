@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class PostIndex extends Component{
     render(){
         return (
-        <div>Post Index page</div>
+            <div>Post Index page</div>
         );
     }
   }
