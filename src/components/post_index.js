@@ -10,7 +10,7 @@ class PostIndex extends Component{
     }
 
     renderPosts(){
-        console.log(this.props.posts);
+        console.log(this.props);
 
         return _.map(this.props.posts, post => {
             return(
@@ -35,7 +35,7 @@ class PostIndex extends Component{
   }
 
   function mapStateToProps(state){
-      return {post: state.post };
+      return {post: state.posts };
   }
 
   export default connect(null, {fetchPosts})(PostIndex);
